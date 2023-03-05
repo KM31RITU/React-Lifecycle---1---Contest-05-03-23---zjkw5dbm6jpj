@@ -2,7 +2,6 @@ import React from 'react'
 
 import '../styles/App.css';
 
-
 class App extends React.Component {
 
   handleClick(){
@@ -12,7 +11,8 @@ class App extends React.Component {
     super(props)
     this.state = {count:0}
     this.handleClick = this.handleClick.bind(this);
-
+  componentDidUpdate(){
+    console.log("rendered");
   }
 
   render() {
